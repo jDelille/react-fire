@@ -2,11 +2,11 @@ import React from 'react';
 import './Modal.scss';
 
 const LoginModal = ({
-	registerEmail,
-	registerPassword,
-	setRegisterEmail,
-	setRegisterPassword,
-	register,
+	loginEmail,
+	loginPassword,
+	setLoginEmail,
+	setLoginPassword,
+	login,
 	setRegisterUser,
 	setLoginUser,
 }) => {
@@ -22,11 +22,11 @@ const LoginModal = ({
 						<div className='email'>
 							<label htmlFor='email'>Email address</label>
 							<input
-								value={registerEmail}
+								value={loginEmail}
 								type='email'
 								name='email'
 								placeholder='Email'
-								onChange={(e) => setRegisterEmail(e.target.value)}
+								onChange={(e) => setLoginEmail(e.target.value)}
 							/>
 						</div>
 						<div className='password'>
@@ -35,8 +35,8 @@ const LoginModal = ({
 								type='password'
 								placeholder='Password'
 								name='password'
-								value={registerPassword}
-								onChange={(e) => setRegisterPassword(e.target.value)}
+								value={loginPassword}
+								onChange={(e) => setLoginPassword(e.target.value)}
 							/>
 						</div>
 						<p> Forgot your password?</p>
@@ -47,7 +47,13 @@ const LoginModal = ({
 							}}>
 							Create an account?
 						</p>
-						<button onClick={register}>Log in</button>
+						<button
+							onClick={() => {
+								login();
+								setLoginUser(false);
+							}}>
+							Log in
+						</button>
 					</div>
 				</div>
 			</div>

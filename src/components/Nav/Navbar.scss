@@ -7,10 +7,11 @@ nav {
 	align-items: center;
 	gap: 1rem;
 	padding: var(--padding);
+	box-shadow: var(--box-shadow);
 	.user-links {
 		margin-left: auto;
 		display: flex;
-		gap: 1rem;
+		gap: 2rem;
 		align-items: center;
 		.register {
 			background-color: var(--accent);

@@ -1,0 +1,14 @@
+.dashboard {
+	width: 100%;
+	height: calc(100vh - 65px);
+	background-color: dodgerblue;
+	padding: var(--padding);
+	color: white;
+	.sub-nav {
+		height: 50px;
+		display: flex;
+		align-items: center;
+		outline: 2px solid orange;
+	}
+
+}

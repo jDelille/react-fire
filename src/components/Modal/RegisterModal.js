@@ -44,10 +44,15 @@ const RegisterModal = ({
 								setRegisterUser(false);
 								setLoginUser(true);
 							}}>
-							{' '}
-							Already have an account?{' '}
+							Already have an account?
 						</p>
-						<button onClick={register}>Create account</button>
+						<button
+							onClick={() => {
+								register();
+								setRegisterUser(false);
+							}}>
+							Create account
+						</button>
 					</div>
 				</div>
 			</div>
