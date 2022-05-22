@@ -1,0 +1,9 @@
+@mixin input() {
+	background-color: lightgray;
+	outline: none;
+	border: none;
+	height: 48px;
+	width: 100%;
+	padding: 0 1rem;
+	font-size: 1rem;
+}
